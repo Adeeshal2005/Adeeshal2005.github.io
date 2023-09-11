@@ -1,0 +1,210 @@
+/* Reset some default styles */
+body, h1, h2, h3, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body{
+    background-color: #12121e;
+    font-family: 'Arvo', serif;
+    scroll-behavior: smooth;
+    /* font-family: 'Arvo', serif;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Ubuntu', sans-serif; */
+    /*font color- #63d3e0 */
+}
+
+.logo{
+    flex-wrap: wrap;
+    position: absolute;
+    top: -10px;
+}
+
+img.logo-icon{
+    width: 50px;
+}
+
+nav {
+    flex-wrap: wrap;
+    margin-top: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-right: 20px;
+
+}
+
+nav ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav li {
+    
+    float: left;
+    margin-right: 20px;
+}
+
+nav li a {
+    
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+
+}
+
+nav li a:hover {
+    
+    color: #12121e;
+    background-color: #63d3e0;
+    border-radius: 10px;
+}
+
+header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 10px 0;
+    background-color: #12121e; 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+   
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+h1{
+    color: #63d3e0;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+.restaurant {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+}
+
+.menu h3 {
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+
+footer{
+    padding-bottom: 50px;
+    background-color: #08060f;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section {
+    margin-top: 40px;
+    flex: 1;
+}
+
+.logo-icon{
+    width: 80px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+.name{
+    text-align: justify;
+    color: #98bbbe;
+    margin-left: 70px;
+    margin-top: 1px;
+}
+
+.motto{
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;;
+}
+
+.contact{
+    font-size: 14px;
+}
+
+.lists{
+    list-style: none;
+}
+
+.center-icons {
+    text-align: center;
+    margin-top: 180px;
+
+}
+
+.icons li{
+    display: inline;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.icons li a{
+    color: #63d3e0;
+}
+
+.icons li a:hover{
+    transition: 0.3s ease;
+    color: white;
+}
+
+.links{
+    display: flex;
+    justify-content: center
+}
+
+.lists {
+    list-style: none;
+    padding: 0;
+}
+.lists li {
+    margin: 5px 0;
+    margin-bottom: 15px;
+}
+
+.lists a {
+    text-decoration: none;
+    color: #63d3e0;
+}
+
+.lists a:hover {
+
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    /* Adjust the styles for screens 768px wide and larger */
+    h1 {
+        font-size: 50px;
+    }
+
+    .restaurant {
+        width: 45%; /* Adjust as needed for the number of columns you want */
+    }
+}
